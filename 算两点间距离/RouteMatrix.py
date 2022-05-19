@@ -36,7 +36,6 @@ def get_distance(df):
 
 
 if __name__ == '__main__':
-    ak = 'TZtttx9HT5DCrXdeA0TMG9TsgsbRdKmE'
+    ak = '111'
     df = pd.read_excel("经纬度.xlsx")
     get_distance(df)
-
