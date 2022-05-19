@@ -47,8 +47,6 @@ def geocoding(df, ak):
 if __name__ == '__main__':
     ak = '111'
     df = pd.read_excel("./地址.xlsx")  # 必须有地址列
-    # df.drop_duplicates(subset=['姓名'], inplace=True)
-    # df['地址'] = df['区/街道'] + df['详细地址']
     df.index = range(len(df))
     result = geocoding(df, ak)
     result.to_excel('./经纬度.xlsx', index=False)
